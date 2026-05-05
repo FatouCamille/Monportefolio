@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille Fatou | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .clickable { cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Port<span>folio</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">A propos de moi</a></li>
+                <li><a href="#skills">Mes Compétences</a></li>
+                <li><a href="#projects">Mes Projets</a></li>
+                <li><a href="#contact">Contactez-Moi !</a></li>
+            </ul>
+            <a href="https://www.linkedin.com/in/fatou-simangoye-40979734a" target="_blank" class="follow-btn">LinkedIn</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h3>Coucou, je m'appelle</h3>
+            <h1>Camille <span>Fatou</span></h1>
+            <p>Je suis développeuse <span>web/logiciel</span></p>
+            
+            <div class="social-icons">
+                <a href="https://github.com/FatouCamille" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/fatou-simangoye-40979734a" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <a href="sta.pdf" download="sta.pdf" class="btn">Download CV</a>
+        </div>
+
+        <div class="hero-img">
+            <div class="shape"></div>
+            <img src="camille.jpeg" alt="Camille Fatou">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">A propos de <span>moi</span></h2>
+        <div class="about-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <p>Développeuse passionnée, je considère l’informatique comme un terrain d’exploration sans frontières.
+
+Mon parcours en Bachelor Passerelle Ingénieur au CESI m’a appris à naviguer sur toute la chaîne technique : du développement logiciel aux architectures web, en passant par les systèmes embarqués et les réseaux. Pour moi, coder ne se limite pas à écrire des lignes de code ; il s’agit avant tout de comprendre comment l’information circule, se structure et prend du sens.
+
+Mes projets reflètent cette curiosité. Que ce soit pour structurer des données afin de valoriser un patrimoine culturel ou pour automatiser des processus métier, je m’attache à concevoir des solutions utiles et cohérentes. Cette sensibilité à la donnée nourrit aujourd’hui mon ambition de m’orienter, à terme, vers le domaine de la Data.</p>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Mes <span>Compétences</span></h2>
+        <div class="skills-container">
+            <div class="skill-badge">Python</div>
+            <div class="skill-badge">MySQL</div>
+            <div class="skill-badge">C++ / Arduino</div>
+            <div class="skill-badge">HTML / CSS</div>
+            <div class="skill-badge">PHP</div>
+            <div class="skill-badge">C# / .NET</div>
+            <div class="skill-badge">Javascript</div>
+            <div class="skill-badge">Pack office ( Excel, Word, PowerPoint)</div>
+            <div class="skill-badge">Gestion de projet</div>
+        </div>
+    </section>
+    
+    <section class="projects" id="projects">
+        <h2 class="heading">Mes <span>Projets</span></h2>
+        <div class="projects-container">
+            
+            <div class="project-box clickable" onclick="openVideo('demo_billnest.mp4')">
+                <video src="demo_billnest.mp4" autoplay loop muted class="project-img"></video>
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <h3>BillNest</h3>
+                <p>Application de gestion métier pour centraliser le suivi client et automatiser la facturation en PDF.</p>
+                <div class="tech-stack"><span>C# & .NET</span> <span>WPF</span> <span>MySQL</span></div>
+                <div style="margin-top: 15px;">
+                    <a href="https://github.com/FatouCamille/Projet-BillNest" target="_blank" class="details-link" onclick="event.stopPropagation();">Voir le code source</a>
+                </div>
+            </div> <div class="project-box clickable" onclick="openVideo('jeu.mp4')">
+                <video src="jeu.mp4" autoplay loop muted class="project-img"></video>
+                <i class="fa-solid fa-gamepad"></i>
+                <h3>Shadow Grid</h3>
+                <p>Jeu d'arcade avec génération de labyrinthe procédurale. <span>(Cliquez pour agrandir)</span></p>
+                <div class="tech-stack"><span>C#</span> <span>Raylib</span></div>
+                <div style="margin-top: 15px;">
+                    <a href="https://github.com/FatouCamille/Projet-ShadowGrid" target="_blank" class="details-link" onclick="event.stopPropagation();">Voir le code source</a>
+                    
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img src="okoumé.png" alt="L'Okoumé Littéraire" class="project-img">
+                <i class="fa-solid fa-book"></i>
+                <h3>L'Okoumé Littéraire</h3>
+                <p>Catalogue interactif de 180 ouvrages pour valoriser le patrimoine culturel gabonais.</p>
+                <div class="tech-stack"><span>HTML</span> <span>CSS</span> <span>JS</span></div>
+                <div style="margin-top: 15px;">
+                    <a href="https://fatoucamille.github.io/Okoume-litteraire/" target="_blank" class="details-link">Voir le site</a>
+                </div>
+            </div>
+
+            <div class="project-box clickable" onclick="openVideo('demo_crud.mp4')">
+                <video src="demo_crud.mp4" autoplay loop muted class="project-img"></video>
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Livre de Recettes</h3>
+                <p>Application CRUD complète avec espace admin sécurisé. <span>(Cliquez pour agrandir)</span></p>
+                <div class="tech-stack"><span>PHP</span> <span>MySQL</span> <span>CSS</span></div>
+                <div style="margin-top: 15px;">
+                    <a href="https://github.com/FatouCamille/Livre-de-Recettes-PHP" target="_blank" class="details-link">Voir le code source</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contactez <span>Moi</span></h2>
+        <div class="contact-container">
+            <div class="contact-box">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p style="font-size: 0.8rem;">camillesimangoyecisse@gmail.com</p>
+                <a href="mailto:camillesimangoyecisse@gmail.com" class="details-link">M'écrire</a>
+            </div>
+            <div class="contact-box">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Téléphone</h3>
+                <p>+33 07 59 60 14 27</p>
+                <a href="tel:+330759601427" class="details-link">M'appeler</a>
+            </div>
+            <div class="contact-box">
+                <i class="fa-brands fa-linkedin"></i>
+                <h3>LinkedIn</h3>
+                <p>Fatou SIMANGOYE</p>
+                <a href="https://www.linkedin.com/in/fatou-simangoye-40979734a" target="_blank" class="details-link">Voir profil</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="videoModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <video id="projectVideo" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("videoModal");
+        const video = document.getElementById("projectVideo");
+        const closeBtn = document.querySelector(".close-modal");
+
+        function openVideo(videoSrc) {
+            video.src = videoSrc;
+            modal.style.display = "block";
+            video.play();
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+            video.pause();
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                video.pause();
+            }
+        }
+    </script>
+
+</body>
+</html>
